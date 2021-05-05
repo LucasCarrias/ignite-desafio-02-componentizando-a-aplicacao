@@ -1,11 +1,6 @@
 import React from "react";
+import Genre from "../interfaces/genre";
 import { Button } from "./Button";
-
-interface Genre {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
 
 type SideBarProps = {
   selectedGenreId: number,
