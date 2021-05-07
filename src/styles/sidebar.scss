@@ -8,18 +8,27 @@ nav.sidebar {
   width: 100%;
 
   padding: 2rem;
+  
 
   background: var(--background2);
 
   > span {
-    margin-bottom: 4.5rem;
+    align-self: center;
+    display: flex;
+    margin: 0 auto 4.5rem;
     font-size: 3rem;
     font-weight: 600;
     color: var(--yellow);
+    font-family: "Poppins";
 
     p {
       display: inline;
-      color: var(--white);
+      color: var(--green);
+    }
+
+    img {
+      max-height: 4rem;
+      margin-right: 2rem;
     }
   }
 

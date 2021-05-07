@@ -7,4 +7,7 @@ export default interface Movie {
     Value: string;
   }>;
   Runtime: string;
+  Year: string;
+  Director: string;
+  Country: string;
 }

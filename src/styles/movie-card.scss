@@ -1,18 +1,70 @@
 .movie-card {
   position: relative;
+  animation: fadeIn 1.2s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
-  img {
-    width: 14.31rem;
-    height: 21.25rem;
+  figure {
+    &:hover {
+      img {
+        border: 0.4rem solid var(--green);
+        filter: brightness(25%);
+      }
+
+      figcaption {
+        border: 0.4rem solid var(--green);
+
+        * {
+          opacity: 1;
+          display: inherit;
+        }
+      }
+    }
+
+    img {
+      width: 14.31rem;
+      height: 21.25rem;
+      border: 0.4rem solid var(--white);
+      transition: border 0.2s;
+    }
+
+    figcaption {
+      width: 100%;
+      height: 21.25rem;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+
+      * {
+        opacity: 0;
+        transition: opacity 0.3s;
+        margin-bottom: 0.5rem; 
+         
+      }
+
+      div {
+        padding: 0 0.5rem; 
+        max-width: 100%;
+      }
+    }
+
+    svg {
+      color: var(--green);
+      margin-right: 0.5rem;
+    }
   }
 
   > div {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
     display: flex;
     justify-content: center;
 
@@ -21,35 +73,38 @@
     .movie-info {
       max-width: 12.31rem;
       width: 100%;
-      
+
       display: flex;
       flex-direction: column;
-  
+
       > span {
         font-weight: 600;
         font-size: 1rem;
         color: #fbfbfb;
-  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         margin-top: auto;
         margin-bottom: 0.5rem;
       }
-  
+
       .meta {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-  
+
         margin-bottom: 1rem;
-  
+
         div {
           display: flex;
           align-items: center;
-  
+
           font-weight: 600;
           color: var(--gray);
-  
+
           svg {
-            color: #FAE800;
+            color: #fae800;
             margin-right: 0.5rem;
           }
         }

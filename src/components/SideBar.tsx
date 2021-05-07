@@ -12,7 +12,7 @@ export function SideBar({ genres, selectedGenreId, handleClickButton }: SideBarP
   return (
     <nav className="sidebar">
       <span>
-        Watch<p>Me</p>
+        Best<p>Flix</p> <img src="/images/popcorn.svg" alt="BestFlix" />
       </span>
 
       <div className="buttons-container">

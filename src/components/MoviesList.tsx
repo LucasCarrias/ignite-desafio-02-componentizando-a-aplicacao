@@ -17,6 +17,9 @@ export function MoviesList({movies} : MovieListProps) {
             poster={movie.Poster}
             runtime={movie.Runtime}
             rating={movie.Ratings[0].Value}
+            director={movie.Director}
+            year={movie.Year}
+            country={movie.Country}
           />
         ))}
       </div>

@@ -15,7 +15,7 @@ export function Content({movies, selectedGenre}: ContentProps) {
           Categoria:<span> {selectedGenre.title}</span>
         </span>
       </header>
-
+      <hr/>
       <MoviesList movies={movies}/>
     </div>
   );
